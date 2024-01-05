@@ -1,0 +1,6 @@
+sdk_generate_library()
+sdk_library_add_sources(mdl_isp.c)
+sdk_library_add_sources(mdl_isp_bl602_eflash_loader_40m.c)
+sdk_library_add_sources(mdl_isp_bl702_eflash_loader_32m.c)
+sdk_add_compile_definitions(-DMDL_ISP_ENABLE)
+sdk_add_include_directories(.)
